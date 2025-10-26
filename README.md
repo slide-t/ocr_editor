@@ -1,22 +1,18 @@
-# ocr_editor
-# 🧠 Personal OCR Editor (Enhanced)
+# 📝 Personal OCR Editor (Browser-Only)
 
-An offline, privacy-friendly OCR editor for handwritten and printed text.
+A lightweight, offline, browser-based OCR editor powered by [Tesseract.js](https://github.com/naptha/tesseract.js).
 
 ## ✨ Features
-- Converts handwritten/printed images → editable text
-- Line-by-line segmentation for higher accuracy
-- Built-in spell correction
-- Edit and download recognized text (TXT)
-- Works locally, no cloud needed
+- Upload handwritten or printed text images
+- Extract editable text directly in browser
+- Edit, copy or download as .txt
+- No backend or server needed
 
----
+## 🚀 Usage
+1. Clone or download this repo
+2. Open `index.html` in your browser
+3. Upload an image → wait for extraction → edit or download text
 
-## 🚀 Quick start
-```bash
-git clone https://github.com/yourname/ocr_editor.git
-cd ocr_editor
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python app.py
+## 🌐 Hosting
+Push to GitHub and enable **GitHub Pages** under repository settings.  
+Then visit: `https://yourusername.github.io/ocr-editor`
