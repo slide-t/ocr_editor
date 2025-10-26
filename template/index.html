@@ -1,1 +1,48 @@
+---
 
+### 💻 templates/index.html
+```html
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal OCR Editor</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Personal OCR Editor</h1>
+    <p>Upload a photo or scanned handwritten page. The recognized text appears editable below.</p>
+
+    <div class="upload-row">
+      <input id="file" type="file" accept="image/*" />
+      <button id="send">Recognize</button>
+    </div>
+
+    <div id="status" class="status">Ready</div>
+
+    <div class="columns">
+      <div class="col">
+        <h3>📄 Image Preview</h3>
+        <div id="preview-wrap"><img id="preview" alt="preview"/></div>
+      </div>
+
+      <div class="col">
+        <h3>📝 Editable Result</h3>
+        <div id="result" contenteditable="true" spellcheck="true"></div>
+        <div class="buttons">
+          <button id="download-txt">Download TXT</button>
+          <button id="copy">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <small>Running <b>TrOCR Handwritten</b> model locally. Your images never leave your device.</small>
+    </footer>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
